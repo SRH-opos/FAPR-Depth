@@ -1,0 +1,35 @@
+project:
+  name: FAPR-Depth
+  image_size: [240, 320]
+  seed: 6248
+
+states:
+  - valid
+  - missing
+  - biased
+  - boundary
+
+experts:
+  - missing
+  - biased
+  - boundary
+
+sources:
+  - raw
+  - relative
+  - expert
+
+training:
+  curriculum_epochs: [2, 1, 1, 2]
+  optimizer: AdamW
+  weight_decay: 0.0001
+  gradient_clip_norm: 2.0
+  amp: true
+  benchmark_output: candidate
+
+paths:
+  cache_root: data/cache
+  base_source_root: third_party/FDCT-main
+  v5_checkpoint: weights/fapr_v5_best_score.pth
+  v6_checkpoint: weights/best_candidate.pth
+  output_root: outputs

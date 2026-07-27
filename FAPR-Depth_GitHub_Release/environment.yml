@@ -1,0 +1,21 @@
+name: fapr-depth
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch>=2.1
+  - torchvision
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pillow
+  - pip
+  - pip:
+      - opencv-python>=4.8

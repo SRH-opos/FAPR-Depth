@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use FAPR-Depth, please cite the associated paper."
+title: "FAPR-Depth: Failure-Aware Posterior Refinement with Risk-Controlled Fusion for Transparent Object Depth Completion"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Zhimin
+  - family-names: Sun
+    given-names: Ruhao
+  - family-names: Wang
+    given-names: Dongmin
+  - family-names: Li
+    given-names: Dong
+version: 0.1.0
+date-released: 2026-07-27
+license: MIT
+repository-code: "https://github.com/USERNAME/FAPR-Depth"
